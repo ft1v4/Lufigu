@@ -1,0 +1,15 @@
+.box{
+    display: flex;
+    background-color: #c53028;
+    width: 99.3%;
+    max-width: 99.3%;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.logo{
+    width: 8vw;
+    height: 13vh;
+}

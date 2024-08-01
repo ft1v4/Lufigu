@@ -1,0 +1,34 @@
+.boxPds {
+    display: flex;
+    padding: 10px;
+
+
+}
+
+* {
+    text-decoration: none;
+}
+
+.boxPd1 {
+    width: 20vw;
+    height: 45vh;
+    background-color: rgb(205, 205, 205);
+    padding: 30px;
+    margin: 10px;
+    padding-top: 25px;
+    border-radius: 10px;
+    color: black;
+}
+
+
+.img {
+    width: 15vw;
+    height: 30vh;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.preco {
+    font-size: 20px;
+    color: black;
+}

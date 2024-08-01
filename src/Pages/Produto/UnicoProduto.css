@@ -1,0 +1,94 @@
+.todo {
+    border: 2px solid green;
+    display: flex;
+    height: 100vh;
+}
+
+.boxImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding-top: 10px;
+
+    background-color: #c53028;
+
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    border: 2px solid red;
+}
+
+.info1 {
+    width: 80%;
+    margin-top: 70px;
+    margin-left: -245px;
+    background-color: #383838;
+    border-radius: 10px;
+
+}
+
+.quant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -360px;
+    background-color: #c53028;
+    width: 25vw;
+    height: 10vh;
+    margin-top: 20px;
+    border-radius: 10px;
+
+
+
+}
+
+#sabor {
+    width: 13vw;
+    height: 4vh;
+    border-radius: 8px;
+    margin-left: 20px;
+    border: 2px solid black;
+
+}
+
+.sabor {
+
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.quantidade {
+    width: 90%;
+}
+
+#quantidade {
+    width: 27vh;
+    height: 3vh;
+    border-radius: 8px;
+    margin-left: 40px;
+    border: 2px solid black;
+}
+
+.boxS {
+    background-color: silver;
+    margin-top: 40px;
+    width: 20vw;
+    margin-left: -300px;
+    border-radius: 10px;
+}
+
+.boxS2 {
+
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-top: 20px;
+}
