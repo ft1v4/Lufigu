@@ -1,0 +1,12 @@
+.navC{
+    background-color: #c53028;
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    border-radius: 0px 0px 0px 10px;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

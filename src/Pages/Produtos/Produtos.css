@@ -10,11 +10,12 @@
 }
 
 .boxPd1 {
-    width: 20vw;
-    height: 45vh;
-    background-color: rgb(205, 205, 205);
+    width: 17vw;
+    height: 38vh;
+    background-color: silver;
     padding: 30px;
     margin: 10px;
+    margin-left: 20px;
     padding-top: 25px;
     border-radius: 10px;
     color: black;

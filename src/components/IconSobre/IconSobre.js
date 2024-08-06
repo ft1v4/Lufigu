@@ -7,7 +7,9 @@ export const IconSobre = () => {
   return (
     <>
       <Link to={'/sobre'}>
+      <div className= 'boxSobre'>
         <Sobre className='icon' />
+        </div>
       </Link>
     </>
   )

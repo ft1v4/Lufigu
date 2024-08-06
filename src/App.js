@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import { Home } from './Pages/Home/Home';
 import { Sobre } from './Pages/Sobre/Sobre';
 import { UnicoProduto } from './Pages/Produto/UnicoProduto.js';
+import { CartProvider } from './Pages/CartContext/CartContext.js';
+import { Cart } from './components/Cart/Cart.js';
 
 function App() {
   const produtosHome = [
@@ -15,9 +17,9 @@ function App() {
     },
     {
       id: 2,
-      nome: 'Paçoca Moreninha Do Rio Com 12 unidades',
+      nome: 'Paçoca Moreninha Do Rio ',
       descricao: 'Doce tradicional da culinária brasileira, amplamente apreciado em todo o país. Feita a partir de uma combinação simples, mas irresistível, de amendoim torrado e moído, açúcar e sal, a paçoca possui uma textura granulada e sabor marcante',
-      preco: 12.00,
+      preco: 1.00,
       img: 'https://acdn.mitiendanube.com/stores/002/547/070/products/6211-044af51b90f3e098e316915249977590-1024-1024.webp'
     }
   ];
@@ -44,7 +46,7 @@ function App() {
           descricao: 'Delicie-se com o Chocolate Kit Kat Branco Nestlé.',
           preco: 3.00,
           img: 'https://images-americanas.b2w.io/produtos/01/00/img3/444138/9/44413832_1SZ.jpg',
-          estoque: 0
+          estoque: 1
         }
       }
     },
@@ -62,13 +64,18 @@ function App() {
   };
 
   return (
-    <div className="App" >
-      <Routes>
-        <Route path='/' element={<Home produtosHome={produtosHome} />} />
-        <Route path='/sobre' element={<Sobre />} />
-        <Route path='/produto/:id' element={<UnicoProduto produtosUnico={produtosUnico} />} />
-      </Routes>
-    </div >
+    <>
+      <CartProvider>
+        <div className="App" >
+          <Routes>
+            <Route path='/' element={<Home produtosHome={produtosHome} />} />
+            <Route path='/sobre' element={<Sobre />} />
+            <Route path='/produto/:id' element={<UnicoProduto produtosUnico={produtosUnico} />} />
+            <Route path='/cart' element={<Cart />} />
+          </Routes>
+        </div >
+      </CartProvider>
+    </>
   );
 }
 

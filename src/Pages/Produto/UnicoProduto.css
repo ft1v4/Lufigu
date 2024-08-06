@@ -1,7 +1,7 @@
 .todo {
-    border: 2px solid green;
     display: flex;
     height: 100vh;
+    overflow: hidden;
 }
 
 .boxImage {
@@ -20,15 +20,16 @@
     align-items: center;
     flex-direction: column;
     width: 60%;
-    border: 2px solid red;
 }
 
 .info1 {
     width: 80%;
     margin-top: 70px;
-    margin-left: -245px;
+    margin-left: -170px;
     background-color: #383838;
     border-radius: 10px;
+    color: white;
+    padding: 15px;
 
 }
 
@@ -75,20 +76,144 @@
     border: 2px solid black;
 }
 
-.boxS {
+
+
+
+
+/* From Uiverse.io by css#btns-io */
+#btn {
+    appearance: button;
+    background-color: #7a2c28;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#btn:after {
+    background-clip: padding-box;
+    background-color: #c53028;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#btn:main,
+#btn:focus {
+    user-select: auto;
+}
+
+#btn:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+#btn:disabled {
+    cursor: auto;
+}
+
+#btn:active:after {
+    border-width: 0 0 0px;
+}
+
+#btn:active {
+    padding-bottom: 10px;
+}
+
+.teste {
     background-color: silver;
     margin-top: 40px;
     width: 20vw;
-    margin-left: -300px;
+    margin-left: -30px;
     border-radius: 10px;
 }
 
-.boxS2 {
 
-    width: 15vw;
+
+
+
+
+.divDasDiv {
+    display: flex;
+    margin-top: 15vh;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #c53028;
+    border-radius: 5px;
+    width: 35vw;
+    height: 15vh;
+    padding: 30px;
+
+}
+
+.divSabor {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-top: 20px;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+
+}
+
+.divQuant {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxInt {
+    width: 80%;
+    height: 100%;
+    background-color: silver;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxInt2 {
+    width: 100%;
+    height: 100%;
+    background-color: silver;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testeRola {
+    display: flex;
+    flex-direction: column;
 }
